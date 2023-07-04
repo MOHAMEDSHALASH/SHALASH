@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed ShalaSh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="lightMood.css">
+    <link rel="icon" href="images/conference.gif">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+<!-- ====== START LOADING PAGE ======  -->
+<div class="loading" id="loading">
+    <div class="load">S</div>
+    <div class="load">H</div>
+    <div class="load">A</div>
+    <div class="load">L</div>
+    <div class="load">A</div>
+    <div class="load">S</div>
+    <div class="load">H</div>
+</div>
+<!-- ====== END LOADING PAGE ======  -->
+
+<!-- ====== START UP ARROW ======  -->
+<div onclick="arrowUP()" class="arrow-up" id="arrow-up"><i class="fa-solid fa-chevron-up fa-fade"></i></div>
+<!-- ====== END UP ARROW ======  -->
+
+<!-- ====== START SETTING ======  -->
+<div class="setting" id="setting">
+    <div class="title-all"><h1>Settings</h1>
+        <div class="colse-setting" id="colse-setting"><i class="fa-solid fa-rectangle-xmark"></i></div>
+    </div>
+    <div class="setting-container">
+        <div class="set">
+            <p class="title-setting">Light \ Dark Mode : </p>
+            <div class="scroll-btn settingMsg" data-msg="mode changed successfully">
+                <p class="mode" id="mode">DARK</p>
+                <div class="point"><i class="fa-solid fa-moon"></i></div>
+            </div>
+        </div>
+        <div class="set">
+            <p class="title-setting">Website Color : </p>
+            <div class="colorANDreset">
+                <div class="resetColor settingMsg" id="resetColor" data-msg="reset color successfully ">
+                    <i class="fa-solid fa-arrows-rotate"></i></div>
+                <input class="settingMsg" data-msg="change color !!" id="changeColor" type="color">
+            </div>
+        </div>
+        <div class="set">
+            <p class="title-setting">BG - Videos : </p>
+            <div class="videoControl settingMsg" id="videoControl" data-msg="background is off">
+                <i class="fa-solid fa-circle-pause"></i></div>
+        </div>
+        <div class="set">
+            <p class="title-setting">Music : </p>
+            <div class="musicANDrange">
+                <div class="musicVolume">
+                    <span class="countVolume">100</span>
+                    <input onmouseout="rangeHide()" onmouseover="rangeShow()" oninput="range(this.value)" class="range" 
+                    type="range" value="100"></div>
+                <div class="musicControl settingMsg" id="musicControl" data-msg="music is on">
+                    <i class="fa-solid fa-volume-xmark"></i></div>    
+            </div>
+        </div>
+        <div class="set">
+            <p class="title-setting">Language : </p>
+            <div class="language" id="language">
+                <img src="images/globe.gif" alt="" width="50px">
+                <select name="" id="" class="settingMsg" data-msg="Unavailable">
+                    <option selected value="">Chosse</option>
+                    <option  value="">AR</option>
+                    <option  value="">EN</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ====== END SETTING ======  -->
+<!-- ====== START LEARN-MORE ======  -->
+<div class="learn-more">
+    <div class="learn-container">
+        <div class="info">
+            <img src="images/conference.gif" alt="">
+            <nav>
+                <h3>Mohamed Shalash</h3>
+                <p>TANTA</p>
+            </nav>
+        </div>
+        <p class="info2"><span>Mohamed</span> is studying at the Faculty of Computers and Information, Shebin El-Kom University in Menoufia.He has 21 years.
+             from Tanta. He has 1 year of experience. We wish you good luck in what is to come .</p>
+    </div>
+</div>
+<div class="animate-open-learn">
+    <div class="learn1"></div><div class="learn2"></div>
+    <div class="learn3"></div><div class="learn4"></div>
+</div>
+<!-- ====== END LEARN-MORE ======  -->
+
+<!-- ====== START HEADER ======  -->
+<header class="item-desgin">
+    <div class="logo"><h1><span>M</span>. Shala<span>S</span>h</h1></div>
+    <div class="links">
+        <ul>
+            <a class="active" href="#home"><li>Home</li></a>
+            <a class="learn-more-btn"><li>about me</li></a>
+            <a href="#experince"><li>experince</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#contact"><li>contact</li></a>
+            <a class="setting-btn" id="setting-btn"><li>Settings <i class="fa-solid fa-gears fa-bounce"></i> </li></a>
+        </ul>
+    </div>
+    <div class="bar-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<!-- ====== END HEADER ======  -->
+
+<!-- ====== START MAIN PAGE ====== -->
+<main id="home" class="headerLink">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+    <div class="left">
+        <h1 id="auto"></h1>
+        <h3>Front-End Developer && Software Enginner .</h3>
+        <div class="social-accounts ">
+            <div class="item-desgin"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="item-desgin"><i class="fa-brands fa-linkedin-in fa-bounce"></i></div>
+            <div class="item-desgin"><i class="fa-brands fa-twitter"></i></div>
+            <div class="item-desgin"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="item-desgin"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <button class="item-desgin learn-more-btn" type="submit">Learn More ...</button>
+    </div>
+    <div class="right">
+        <div class="animate"></div>
+        <div class="logo"><img src="images/mo.jpg" alt="mo"></div>
+    </div>
+</main>
+<!-- ====== END MAIN PAGE ====== -->
+
+<!-- ====== START EXPERINCE PAGE ====== -->
+<div class="experince headerLink" id="experince">
+    <video class="bg-video" src="videos/Untitled video - Made with Clipchamp (1).mp4" autoplay muted loop></video>
+    <div class="title-all"><h1>Experince</h1></div>
+    <div class="skills">
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="prograss"><div class="prograss-line" data-width="100"></div></div>
+            <h3>100 %</h3>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="prograss"><div class="prograss-line" data-width="98"></div></div>
+            <h3>98 %</h3>
+        </div>
+        <div class="skill">
+            <h3>Boot Strap</h3>
+            <div class="prograss"><div class="prograss-line" data-width="88"></div></div>
+            <h3>88 %</h3>
+        </div>
+        <div class="skill">
+            <h3>JS Script</h3>
+            <div class="prograss"><div class="prograss-line" data-width="80"></div></div>
+            <h3>80 %</h3>
+        </div>
+        <div class="skill">
+            <h3>PHP</h3>
+            <div class="prograss"><div class="prograss-line" data-width="50"></div></div>
+            <h3>50 %</h3>
+        </div>
+        <div class="skill">
+            <h3>My SQL</h3>
+            <div class="prograss"><div class="prograss-line" data-width="90"></div></div>
+            <h3>90 %</h3>
+        </div>
+        <div class="skill">
+            <h3>C++</h3>
+            <div class="prograss"><div class="prograss-line" data-width="77"></div></div>
+            <h3>77 %</h3>
+        </div>
+    </div>
+</div>
+<!-- ====== END EXPERINCE PAGE ====== -->
+
+<!-- ====== START portfolio PAGE ====== -->
+<div class="portfolio headerLink" id="portfolio">
+    <div class="title-all"><h1>Portfolio</h1>
+        <div class="icon-grid"><span class="material-symbols-outlined">
+            grid_view</span></div>
+    </div>
+    <div class="container1">
+        <div class="catogires ">
+            <div class="catogery item-desgin active ">ALL</div>
+            <div class="catogery item-desgin">BRAND</div>
+            <div class="catogery item-desgin">DESGIN</div>
+            <div class="catogery item-desgin">WEB</div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Write to search ..">
+            <span class="material-symbols-outlined item-desgin">search</span>
+        </div>
+    </div>
+    <div class="portfolio-boxes">
+        <section class="DESGIN ALL">
+            <img src="images/temp1.jpg" alt="">
+            <h3>Desgin 1 'BeMax'</h3>
+            <div class="about">
+                <p>HTML</p>
+                <p>css</p>
+                <p>js</p>
+            </div>
+            <div class="btnLink"><a href="#"><button type="submit">Open</button></a></div>
+        </section>
+        <section class="BRAND ALL">
+            <img src="images/temp2.jpg" alt="">
+            <h3>Desgin 1 'BeMax'</h3>
+            <div class="about">
+                <p>HTML</p>
+                <p>css</p>
+                <p>js</p>
+            </div>
+            <div class="btnLink"><a href="#"><button type="submit">Open</button></a></div>
+        </section>
+        <section class="DESGIN ALL">
+            <img src="images/temp3.jpg" alt="">
+            <h3>Desgin 1 'BeMax'</h3>
+            <div class="about">
+                <p>HTML</p>
+                <p>css</p>
+                <p>js</p>
+            </div>
+            <div class="btnLink"><a href="#"><button type="submit">Open</button></a></div>
+        </section>
+        <section class="WEB ALL">
+            <img src="images/temp4.jpg" alt="">
+            <h3>Desgin 1 'BeMax'</h3>
+            <div class="about">
+                <p>HTML</p>
+                <p>css</p>
+                <p>js</p>
+            </div>
+            <div class="btnLink"><a href="#"><button type="submit">Open</button></a></div>
+        </section>
+        <section class="WEB ALL">
+            <img src="images/temp5.jpg" alt="">
+            <h3>Desgin 1 'BeMax'</h3>
+            <div class="about">
+                <p>HTML</p>
+                <p>css</p>
+                <p>js</p>
+            </div>
+            <div class="btnLink"><a href="#"><button type="submit">Open</button></a></div>
+        </section>
+        <section class="BRAND ALL">
+            <img src="images/temp6.jpg" alt="">
+            <h3>Desgin 1 'BeMax'</h3>
+            <div class="about">
+                <p>HTML</p>
+                <p>css</p>
+                <p>js</p>
+            </div>
+            <div class="btnLink"><a href="#"><button type="submit">Open</button></a></div>
+        </section>
+        <section class="WEB ALL">
+            <img src="images/temp1.jpg" alt="">
+            <h3>Desgin 1 'BeMax'</h3>
+            <div class="about">
+                <p>HTML</p>
+                <p>css</p>
+                <p>js</p>
+            </div>
+            <div class="btnLink"><a href="#"><button type="submit">Open</button></a></div>
+        </section>
+    </div>
+</div>
+<!-- ====== END portfolio PAGE ====== -->
+
+<!-- ====== START CONTACT PAGE ====== -->
+<div class="contact headerLink" id="contact">
+    <div class="title-all"><h1>Contact</h1></div>
+    <video class="bg-video" src="videos/Untitled video - Made with Clipchamp (1).mp4" autoplay muted loop></video>
+    <!-- <img class="bg-image" src="images/bg-stars-1.webp" alt=""> -->
+    <div class="container-contact">
+        <div class="left">
+            <a class="mail" href="mailto:mo.shalash00@gmail.com">mo.shalash00@gmail.com</a>
+            <div class="social-accounts ">
+                <div class="item-desgin"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="item-desgin"><i class="fa-brands fa-linkedin-in fa-bounce"></i></div>
+                <div class="item-desgin"><i class="fa-brands fa-twitter"></i></div>
+                <div class="item-desgin"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="item-desgin"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+        <div class="right">
+            <form action="#">
+                <input type="text" placeholder="Your Name ">
+                <input type="email" placeholder="Your Email ">
+                <textarea name="" id="" cols="20" rows="10" placeholder="Write Your Message Here !"></textarea>
+                <button class="item-desgin" type="submit">Send </button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- ====== END CONTACT PAGE ====== -->
+
+<!-- ====== START FOOTER ====== -->
+<footer class="item-desgin">
+    <h3>Made With || MOHAMED SHALASH &copy;2023</h3>
+</footer>
+<!-- ====== END FOOTER ====== -->
+
+<!-- ======= START MUSIC ======== -->
+<div class="music">
+    <audio id="musicPlay" src="music/music.mp3" loop ></audio>
+</div>
+<!-- ======= END MUSIC ======== -->
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
